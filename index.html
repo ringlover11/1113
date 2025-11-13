@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="可愛動物主題自動回覆聊天室">
+    <title>🐾 可愛動物聊天室 🐾</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🐾 可愛動物聊天室 🐾</h1>
+            <p class="subtitle">與你喜歡的動物聊天吧！</p>
+        </header>
+
+        <div class="chat-wrapper">
+            <div class="animal-selector">
+                <h2>選擇你的聊天夥伴</h2>
+                <div class="animal-buttons">
+                    <button class="animal-btn active" data-animal="dog">🐕 小狗</button>
+                    <button class="animal-btn" data-animal="cat">🐱 小貓</button>
+                    <button class="animal-btn" data-animal="rabbit">🐰 小兔</button>
+                    <button class="animal-btn" data-animal="fox">🦊 小狐狸</button>
+                    <button class="animal-btn" data-animal="panda">🐼 熊貓</button>
+                </div>
+            </div>
+
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        <span class="animal-icon">🐕</span>
+                        <div class="message-content">
+                            <p>汪汪！你好呀！👋 我是小狗，很高興認識你！</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input-area">
+                    <input 
+                        type="text" 
+                        id="userInput" 
+                        class="chat-input" 
+                        placeholder="輸入你的訊息…"
+                        autocomplete="off"
+                    >
+                    <button id="sendBtn" class="send-btn">發送 📨</button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>💕 由可愛動物朋友打造 | © 2025 Animal Chat</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
