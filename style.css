@@ -49,27 +49,28 @@ body {
 /* Animal Selector */
 .animal-selector {
     background: #f8f9fa;
-    padding: 20px;
-    border-bottom: 2px solid #e9ecef;
+    padding: 15px 12px;
+    border-right: 2px solid #e9ecef;
+    overflow-y: auto;
 }
 
 .animal-selector h2 {
-    font-size: 1.3em;
-    margin-bottom: 15px;
+    font-size: 1em;
+    margin-bottom: 12px;
     color: #333;
 }
 
 .animal-buttons {
     display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: flex-start;
 }
 
 .animal-btn {
-    padding: 10px 20px;
+    padding: 8px 12px;
     border: 2px solid #ddd;
-    border-radius: 25px;
+    border-radius: 20px;
     background: white;
     color: #333;
     font-size: 1em;
@@ -95,6 +96,16 @@ body {
     display: flex;
     flex: 1;
     overflow: hidden;
+    gap: 0;
+}
+
+/* Animal Selector */
+.animal-selector {
+    width: 200px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #e9ecef;
 }
 
 /* Chat Container */
